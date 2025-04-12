@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- The package name is no longer set here. -->
 
-    <!-- Optional permissions if needed -->
+
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"> <!-- Replace with your theme -->
 
-        <!-- MainActivity as the launcher activity -->
+
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
