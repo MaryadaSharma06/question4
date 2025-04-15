@@ -2,6 +2,9 @@ plugins {
     alias(libs.plugins.android.application)
 }
 
+apply(plugin = "com.google.gms.google-services")
+
+
 android {
     namespace = "com.example.question4"
     compileSdk = 35
@@ -25,6 +28,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -37,11 +41,10 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
 
+
     implementation("com.google.android.gms:play-services-auth:21.3.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
-
-

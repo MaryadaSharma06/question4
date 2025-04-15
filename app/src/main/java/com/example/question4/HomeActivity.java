@@ -42,6 +42,7 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
+
     private void signOut() {
         mGoogleSignInClient.signOut()
                 .addOnCompleteListener(this, task -> {
